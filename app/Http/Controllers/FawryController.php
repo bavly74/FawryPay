@@ -13,7 +13,6 @@ class FawryController extends Controller
         $this->fawryService=$fawryService;
         
     }
-    //pay with CARD OR pay with fawry
     public function payNow(){
         $data=[
             "merchantCode" => "1tSa6uxz2nTwlaAmt38enA==",
@@ -48,7 +47,7 @@ class FawryController extends Controller
 
             "enable3DS" => true,
             "authCaptureModePayment" => false,
-            "returnUrl" =>"https://developer.fawrystaging.com",
+            "returnUrl" =>"https://www.asu.edu.eg/ar",
             "signature"=> "2ca4c078ab0d4c50ba90e31b3b0339d4d4ae5b32f97092dd9e9c07888c7eef36",
             "paymentMethod"=> "CARD",
             "description"=> "Example Description"
