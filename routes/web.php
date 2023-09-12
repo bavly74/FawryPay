@@ -18,3 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('pay',[FawryController::class,'payNow']);
+
+Route::get('test-pay',function(){return view('testPay');});
+Route::get('test-pay2',function(){return view('testPay2');});

@@ -11,7 +11,7 @@ class FawryController extends Controller
     public function __construct(Fawry  $fawryService)
     {
         $this->fawryService=$fawryService;
-        
+
     }
     public function payNow(){
         $data=[
@@ -33,7 +33,7 @@ class FawryController extends Controller
             "language" => "en-gb",
             "chargeItems"=> [
                 [
-              
+
                 "itemId"=> "897fa8e81be26df25db592e81c31c",
                 "description"=> "Item Descriptoin",
                 "price"=> "20.0",
@@ -54,5 +54,7 @@ class FawryController extends Controller
       ];
       return $this->fawryService->payment($data);
     }
-   
+
+    
+
 }
